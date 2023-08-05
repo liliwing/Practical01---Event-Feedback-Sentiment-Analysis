@@ -30,11 +30,9 @@ if __name__ == '__main__':
 
         try:
             if prediction == "POSITIVE":
-                if email == "alvislee2020@gmail.com":
-                    google_service.send_email(email, POSITIVE_RESPONSE)
+                google_service.send_email(email, POSITIVE_RESPONSE)
             else:
-                pass
-                # google_service.send_email(email, NEGATIVE_RESPONSE)
+                google_service.send_email(email, NEGATIVE_RESPONSE)
         except HTTPError:
             break
 

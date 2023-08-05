@@ -58,12 +58,7 @@ def create_dataset():
         else:
             labels.append(1)
 
-    print(texts[:5])
-    print(labels[:5])
-
     return Dataset.from_dict({ "text": texts, "label": labels })
-
-
 
 if __name__ == '__main__':
     # Create dataset
